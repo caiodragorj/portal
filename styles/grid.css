@@ -1,0 +1,43 @@
+.grid{
+  display: grid;
+  gap: 8px;
+}
+
+header .menu{
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid pink;
+  justify-content: space-around;
+  }
+
+ header .menu div{
+  background-color: var(--brand-color);
+   text-align: center;
+  border: 2px solid green;
+ }
+
+ header .nav{
+  grid-template-columns: repeat(7, 1fr);
+  border: 2px solid pink;
+  gap: 8px;
+  }
+
+  header .nav div{
+    background-color: var(--brand-color);
+    border: 2px solid green;
+   }
+
+   main .destaque {
+    grid-template-columns: repeat(2, 1fr);
+   }  
+  
+   main .destaque div{
+    background-color: var(--brand-color);
+    border: 2px solid green;
+   }
+
+   main .destaque div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+   }
+
+
